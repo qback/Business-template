@@ -2,7 +2,14 @@
 
 mixin header()
 	+b('header').header&attributes(attributes)
-
+		+e('a').logo(href='#{jv0}' title='Home') Business
+		+e('ul').list
+			+e('li').item: +e('a').link(href='#{jv0}' title='nav-link') About us
+			+e('li').item: +e('a').link(href='#{jv0}' title='nav-link') Services
+			+e('li').item: +e('a').link(href='#{jv0}' title='nav-link') Management
+			+e('li').item: +e('a').link(href='#{jv0}' title='nav-link') News
+			+e('li').item: +e('a').link(href='#{jv0}' title='nav-link') Contact
+			+e('li').item: +e('a').link(href='#{jv0}' title='nav-link') Call Me
 
 
 

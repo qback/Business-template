@@ -33,3 +33,15 @@ padding-x($padding)
 padding-y($padding)
 	padding-top $padding
 	padding-bottom $padding
+
+em( value, base = $base-font-size )
+	unit(value/base * 1em, 'em')
+
+prc($decimal)
+	( $decimal * 100 ) %
+
+rem()
+	remified = ()
+	for arg in arguments
+		push(remified, unit(arg/$base-font-size, 'rem'))
+	return remified
