@@ -45,3 +45,8 @@ rem()
 	for arg in arguments
 		push(remified, unit(arg/$base-font-size, 'rem'))
 	return remified
+
+wrapper($width=1120px)
+	max-width $width
+	padding 0 10px
+	margin 0 auto
