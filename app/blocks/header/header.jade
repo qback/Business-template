@@ -2,14 +2,17 @@
 
 mixin header()
 	+b('header').header&attributes(attributes)
-		+e('a').logo(href='#{jv0}' title='Home') Business
-		+e('ul').list
-			+e('li').item: +e('a').link(href='#{jv0}' title='nav-link') About us
-			+e('li').item: +e('a').link(href='#{jv0}' title='nav-link') Services
-			+e('li').item: +e('a').link(href='#{jv0}' title='nav-link') Management
-			+e('li').item: +e('a').link(href='#{jv0}' title='nav-link') News
-			+e('li').item: +e('a').link(href='#{jv0}' title='nav-link') Contact
-			+e('li').item: +e('a').link(href='#{jv0}' title='nav-link') Call Me
+		+e.wrapper
+			+e('a').logo(href='#{jv0}' title='Home') Business
+			+e('ul').list
+				+e('li').item: +e('a').link(href='#{jv0}' title='About us') About us
+				+e('li').item_custom-margin: +e('a').link(href='#{jv0}' title='Services') Services
+				+e('li').item_custom-margin: +e('a').link(href='#{jv0}' title='Management') Management
+				+e('li').item: +e('a').link(href='#{jv0}' title='News') News
+				+e('li').item_custom-margin: +e('a').link(href='#{jv0}' title='Contact') Contact
+				+e('li').item_last: +e('a').link(href='#{jv0}' title='Call Me') Call Me
+			+e('a').trigger#menuTrigger(href='#{jv0}' title="Menu trigger")
+				+e('i').icon#menuTriggerIcon
 
 
 
