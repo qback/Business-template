@@ -1,0 +1,9 @@
+mixin nav()
+	+b.nav&attributes(attributes)
+		+e('ul').list
+			+e('li').item: +e('a').link(href='#{jv0}' title='About us') About us
+			+e('li').item: +e('a').link(href='#{jv0}' title='Services') Services
+			+e('li').item: +e('a').link(href='#{jv0}' title='Management') Management
+			+e('li').item: +e('a').link(href='#{jv0}' title='News') News
+			+e('li').item: +e('a').link(href='#{jv0}' title='Contact') Contact
+			+e('li').item_last: +e('a').link(href='#{jv0}' title='Call Me') Call Me
