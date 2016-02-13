@@ -1,26 +1,32 @@
 .header
 	position relative
 	z-index 3
-	padding-top 63px
-	height 99px
+	padding-top em(63)
+	min-height em(99)
 	background-color #fff
 	transition transform .4s
 
+	+below(1000px)
+		text-align center
+
 	&_is-shifted
-		transform translateX(-260px)
+		transform translateX(em(-200))
 
 	&__wrapper
 		wrapper()
 
 	&__logo
 		font-family $raleway
-		font-size 42px
+		font-size em(42)
 		font-weight 700
 		line-height (24/42)
 		text-decoration none
 		text-transform lowercase
 		letter-spacing 4.1px
 		color #000
+
+		+below(1000px)
+			margin-left em(-80, 42)
 
 	&__list
 		float right
@@ -29,20 +35,20 @@
 			display none
 
 	&__item
-		margin-top -1px
-		margin-left 40px
+		margin-top em(-1)
+		margin-left em(40)
 		float left
 
 		&_last
-			margin-right -2px
-			margin-left 39px
+			margin-right em(-2)
+			margin-left em(39)
 
 		&_custom-margin
-			margin-left 45px
+			margin-left em(45)
 
 	&__link
 		font-family $helvetica-cyr
-		font-size 14px
+		font-size em(14)
 		font-weight 300
 		line-height (24/14)
 		text-decoration none
@@ -62,7 +68,7 @@
 			color transparent
 
 		&:hover
-			padding-bottom 15px
+			padding-bottom em(15, 14)
 			font-weight 500
 			border-bottom 2px solid #000
 
@@ -73,7 +79,7 @@
 		display none
 		width 50px
 		height 50px
-		border 1px solid #000
+		border 1px solid #e7e7e7
 
 		+below(1000px)
 			display block
