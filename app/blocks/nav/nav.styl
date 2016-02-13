@@ -3,13 +3,13 @@
 	z-index 1
 	top 0
 	right 0
-	padding-top 47px
+	padding-top em(47)
 	visibility hidden
 	overflow-y auto
-	width 260px
+	width em(200)
 	height 100%
 	transition transform .4s 0s, visibility 0s .4s
-	transform translateX(80px)
+	transform translateX(em(80))
 
 	&_open
 		visibility visible
@@ -17,17 +17,23 @@
 		transform translateX(0)
 
 	&__list
-		text-align center
+		margin-left em(15)
+		border-left 1px solid #e7e7e7
 
 	&__link
-		padding-y 15px
+		margin-left em(20, 14)
+		padding-y em(15, 14)
 		display block
 		font-family $helvetica-cyr
-		font-size 14px
+		font-size em(14)
 		font-weight 300
 		line-height (24/14)
 		text-decoration none
 		text-transform uppercase
 		letter-spacing .6px
 		color #000
+
+		&:hover
+			padding-bottom em(15, 14)
+			font-weight 500
 
