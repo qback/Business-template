@@ -1,6 +1,7 @@
 include ../../../node_modules/bemto.jade/bemto.jade
 include ../page/page
 include ../header/header
+include ../nav/nav
 include ../footer/footer
 include ../scripts/scripts
 
@@ -8,8 +9,9 @@ include ../scripts/scripts
 doctype html
 html(lang='eng')
 	include ../head/head
-	+page
-		+header
+	+page(id='page')
+		+header(id='header')
+		+nav(id='nav')
 		block content
 		+footer
 		+scripts(['app.min.js'])
