@@ -1,3 +1,16 @@
+include ../mission/mission
+include ../reason/reason
+include ../services/services
+
 mixin about()
 	+b('section').about&attributes(attributes)
+		+e.wrapper
+			+e.main
+				+e.mission
+					+mission()
+				+e.reason
+					+e('hr').separator
+					+reason()
+			+e('aside').services
+				+services()
 
