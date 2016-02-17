@@ -5,6 +5,7 @@ $(() => {
 	const $menuTrigger = $('#menuTrigger');
 	const $menuTriggerIcon = $('#menuTriggerIcon');
 	const $header = $('#header');
+	const $index = $('#index');
 	const $pageBody = $('#page');
 	const $sideNav = $('#nav');
 
@@ -13,7 +14,7 @@ $(() => {
 		event.preventDefault();
 		$menuTriggerIcon.toggleClass('header__icon_is-clicked');
 		$header.toggleClass('header_is-shifted');
-		$pageBody.toggleClass('page_overflow-hidden');
+		$index.toggleClass('index_is-shifted');
 		$sideNav.toggleClass('nav_open');
 	});
 
@@ -22,7 +23,7 @@ $(() => {
 		if ( $sideNav.hasClass('nav_open') && !$(event.target).is('#menuTrigger, #menuTriggerIcon')) {
 			$menuTriggerIcon.removeClass('header__icon_is-clicked');
 			$header.removeClass('header_is-shifted');
-			$pageBody.removeClass('page_overflow-hidden');
+			$index.removeClass('index_is-shifted');
 			$sideNav.removeClass('nav_open');
 		}
 	});
