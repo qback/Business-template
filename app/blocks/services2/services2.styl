@@ -1,0 +1,58 @@
+.services2
+
+	+below(1140px)
+		text-align justify
+
+	&::before
+		content ''
+
+		+below(1140px)
+			display block
+			width 100%
+
+	&::after
+		content ''
+
+		+below(1140px)
+			display inline-block
+			width 100%
+
+
+	&__figure
+		position relative
+		margin-bottom em(26)
+		text-align left
+		white-space nowrap
+
+		&_last
+			margin-bottom 0
+
+		+below(1140px)
+			margin-bottom 0
+			display inline-block
+			vertical-align top
+
+		+below(700px)
+			margin-bottom em(26)
+
+	&__img
+		width 100%
+		height auto
+
+	&__caption
+		position absolute
+		left em(18, 14)
+		bottom em(15, 14)
+		font-family $helvetica-cyr
+		font-size em(14)
+		font-weight 200
+		line-height (18/14)
+		letter-spacing .6px
+		color #fff
+
+		+below(450px)
+			position static
+			font-size em(12)
+			font-weight 300
+			text-align center
+			color #000

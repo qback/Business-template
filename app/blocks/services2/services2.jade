@@ -1,0 +1,21 @@
+mixin services2()
+	+b.services2&attributes(attributes)
+		+e('figure').figure
+			+e('img').img(src='assets/images/real-estate.jpg' alt='real-estate')
+			+e('figcaption').caption
+				| Land Law, Real Estate<br>
+				| and construction
+		+e('figure').figure
+			+e('picture').picture
+				source(media='(min-width: 1140px)', srcset='assets/images/business.jpg')
+				+e('img').img(src='assets/images/business_small.jpg' alt='business')
+			+e('figcaption').caption
+				| Legal accompaniment<br>
+				| business
+		+e('figure').figure_last
+			+e('picture').picture
+				source(media='(min-width: 1140px)', srcset='assets/images/person.jpg')
+				+e('img').img(src='assets/images/person_small.jpg' alt='person')
+			+e('figcaption').caption
+				| Services physical<br>
+				| persons
