@@ -1,6 +1,7 @@
 include ../mission/mission
 include ../reason/reason
 include ../services/services
+include ../services2/services2
 
 mixin about()
 	+b('section').about&attributes(attributes)
@@ -11,6 +12,9 @@ mixin about()
 				+e.reason
 					+e('hr').separator
 					+reason()
-			+e('aside').services
+			+e('aside').column
 				+services()
+			+e('aside').column2
+				+services2()
+
 

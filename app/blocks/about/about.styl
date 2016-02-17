@@ -5,10 +5,27 @@
 		wrapper()
 		clearfix()
 
+		+below(1140px)
+			text-align center
+
+		+below(450px)
+			padding-x 10px
+
 	&__main
 		float left
 		width prc(700/1100)
+		text-align left
 		vertical-align top
+
+		+below(1140px)
+			display inline-block
+			float none
+
+		+below(700px)
+			width 100%
+
+		+below(450px)
+			font-size rem(12)
 
 	&__mission
 		position relative
@@ -19,6 +36,9 @@
 		background-repeat no-repeat
 		background-position left center
 		background-size cover
+
+		+below(700px)
+			margin-x auto
 
 	&__reason
 		position relative
@@ -34,9 +54,40 @@
 		border none
 		opacity .2
 
-	&__services
+	&__column
+		margin-right prc(30/1140)
+		float left
+		vertical-align top
+
+		+below(1140px)
+			display inline-block
+			float none
+			max-width em(180)
+
+		+below(700px)
+			margin-top em(50px)
+			max-width em(190)
+
+		+below(450px)
+			width prc(190/450)
+
+	&__column2
+		margin-right 0
 		float right
-		width prc(400/1100)
+
+		+below(1140px)
+			margin-top em(50px)
+			margin-x auto
+			float none
+			width 100%
+			max-width em(856px)
+
+		+below(700px)
+			display inline-block
+			max-width em(190)
+
+		+below(450px)
+			width prc(190/450)
 
 
 
