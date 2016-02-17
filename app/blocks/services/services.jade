@@ -1,34 +1,24 @@
 mixin services()
 	+b('section').services&attributes(attributes)
-		+e.column
-			+e('figure').figure
-				+e('img').img(src='assets/images/trial.jpg' alt='trial')
-				+e('figcaption').caption
-					| Trial<br>
-					| practice
-			+e('figure').figure
-				+e('img').img(src='assets/images/contract.jpg' alt='contract')
-				+e('figcaption').caption
-					| Contract<br>
-					| law
-			+e('figure').figure_last
-				+e('img').img(src='assets/images/corporate.jpg' alt='corporate')
-				+e('figcaption').caption
-					| Corporate<br>
-					| law
-		+e.column_last
-			+e('figure').figure
-				+e('img').img(src='assets/images/real-estate.jpg' alt='real-estate')
-				+e('figcaption').caption
-					| Land Law, Real Estate<br>
-					| and construction
-			+e('figure').figure
-				+e('img').img(src='assets/images/business.jpg' alt='business')
-				+e('figcaption').caption
-					| Legal accompaniment<br>
-					| business
-			+e('figure').figure_last
-				+e('img').img(src='assets/images/person.jpg' alt='person')
-				+e('figcaption').caption
-					| Services physical<br>
-					| persons
+		+e('figure').figure
+			+e('picture').picture
+				source(media='(min-width: 700px)' srcset='assets/images/trial.jpg')
+				+e('img').img(src='assets/images/trial_small.jpg' alt='trial')
+			+e('figcaption').caption
+				| Trial<br>
+				| practice
+		+e('figure').figure
+			+e('picture').picture
+				source(media='(min-width: 700px)' srcset='assets/images/contract.jpg')
+				+e('img').img(src='assets/images/contract_small.jpg' alt='contract')
+			+e('figcaption').caption
+				| Contract<br>
+				| law
+		+e('figure').figure_last
+			+e('picture').picture
+				source(media='(min-width: 700px)' srcset='assets/images/corporate.jpg')
+				+e('img').img(src='assets/images/corporate_small.jpg' alt='corporate')
+			+e('figcaption').caption
+				| Corporate<br>
+				| law
+

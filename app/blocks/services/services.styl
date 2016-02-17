@@ -1,17 +1,10 @@
 .services
 
-	&__column
-		margin-right prc(30/400)
-		vertical-align top
-		float left
-
-		&_last
-			margin-right 0
-			float right
 
 	&__figure
 		position relative
 		margin-bottom em(26)
+		text-align left
 
 		&_last
 			margin-bottom 0
@@ -30,3 +23,11 @@
 		line-height (18/14)
 		letter-spacing .6px
 		color #fff
+
+		+below(450px)
+			position static
+			font-size em(12)
+			font-weight 300
+			text-align center
+			color #000
+
