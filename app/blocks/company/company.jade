@@ -1,0 +1,14 @@
+mixin company()
+	+b.company&attributes(attributes)
+		+e.wrapper
+			+e('figure').figure
+				+e('img').img(src='assets/images/building.jpg' alt='building' title='building')
+			+e.text
+				+e.number 03
+				+e('h2').title About #[span company]
+				+e('p').desc
+					| Consulting companies, business from the very
+					| first day of its activity has an impeccable reputation
+					| as a reliable business partner, allowing potential.
+
+
