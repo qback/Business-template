@@ -32,7 +32,6 @@
 		max-width 100%
 		height auto
 
-
 	&__text
 		padding-top em(30)
 		padding-right prc(96/1100)
@@ -42,29 +41,25 @@
 		max-width em(510)
 		vertical-align top
 
-
 		+below(1000px)
 			margin 0 auto
-			padding-top em(51)
 			padding-right em(50)
-			padding-left em(36)
+			padding-left 0
 			display block
 			width auto
 
 		+below(700px)
 			padding-right em(10)
 
-
-
 	&__number
 		position relative
-		margin-bottom em(29, 60)
+		margin-bottom em(13, 60)
 		display inline-block
 		font-family $raleway
 		font-size em(60)
 		font-weight 300
 		line-height (60/60)
-		letter-spacing 2.5px
+		letter-spacing em(2.5, 60)
 
 		&::before
 			position absolute
@@ -78,17 +73,17 @@
 			transform translateX(-50%)
 
 	&__title
-		margin-bottom em(33, 36)
+		margin-bottom em(19, 36)
 		margin-left em(69, 36)
 		font-family $helvetica-cyr
 		font-size em(36)
 		font-weight 300
-		line-height em(24, 36)
-		letter-spacing 2.5px
-		word-spacing -2.7px
+		line-height (36/24)
+		letter-spacing em(2.5, 36)
+		word-spacing em(-2.7, 36)
 
 		& span
-			letter-spacing 1.5px
+			letter-spacing em(1.5, 36)
 
 	&__desc
 		margin-left em(72, 14)
@@ -96,4 +91,4 @@
 		font-size em(14)
 		font-weight 300
 		line-height (24/14)
-		letter-spacing .4px
+		letter-spacing em(.4, 14)
