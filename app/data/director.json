@@ -1,5 +1,6 @@
 	{
 		"img": "/assets/images/director.jpg",
+		"imgsmall": "/assets/images/director_small.jpg",
 		"desc": "director",
 		"figcaption": "Director",
 		"name": "Bryan Armstrong",
