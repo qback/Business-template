@@ -1,0 +1,82 @@
+.member
+	position relative
+	text-align left
+
+	+below(1000px)
+		clearfix()
+
+	+below(700px)
+		font-size rem(13)
+
+	&__figure
+		float left
+		max-width em(238)
+
+		+below(1000px)
+			width 30%
+
+	&__img
+		width 100%
+		max-width 100%
+		height auto
+
+	&__text
+		margin-left em(281)
+		padding-top em(30)
+		font-family $helvetica-cyr
+		vertical-align top
+		color #000
+
+		+below(1000px)
+			margin-left 35%
+			width 65%
+
+		+below(450px)
+			padding-top em(10)
+
+	&__caption
+		position relative
+		margin-bottom em(34, 12)
+		font-size em(12)
+		font-weight 300
+		font-style italic
+		line-height (12/12)
+		letter-spacing em(.6, 12)
+
+		+below(450px)
+			margin-bottom em(12, 12)
+
+	&__name
+		margin-bottom em(12, 24)
+		font-size em(24)
+		font-weight 300
+		line-height (24/24)
+		letter-spacing em(1.4, 24)
+
+	&__bio
+		margin-bottom em(55, 14)
+		margin-left  1px
+		font-size em(14)
+		font-weight 300
+		line-height (24/14)
+		letter-spacing em(.5, 14)
+
+		+below(1000px)
+			margin-bottom 0
+
+	&__decor
+		position absolute
+		top em(3, 12)
+		left em(-65, 12)
+		width em(43, 12)
+		height em(7, 12)
+		background-color #000
+		opacity .2
+
+		+below(1000px)
+			left prc(-62/510)
+			width prc(43/510)
+
+		+below(450px)
+			display none
+

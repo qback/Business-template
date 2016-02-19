@@ -1,0 +1,10 @@
+mixin member(member)
+	+b.member&attributes(attributes)
+		+e('figure').figure
+			+e('picture').picture
+				source(media='(max-width: 450px)', srcset='#{member.imgsmall}')
+				+e('img').img(src='#{member.img}' alt='#{member.desc}' title='#{member.desc}')
+		+e.text
+			+e('p').caption #[+e('span').decor]#{member.figcaption}
+			+e('h3').name #{member.name}
+			+e('p').bio #{member.bio}
