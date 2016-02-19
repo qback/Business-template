@@ -1,0 +1,19 @@
+include ../member/member
+
+mixin management()
+	+b.management&attributes(attributes)
+		+e.wrapper
+			+e.text
+				+e.number 04
+				+e('h2').title Management of #[span the company]
+				+e('p').desc
+					| Management of the company is based on the principles of separation of
+					| levels. The Board of Directors manages the company, identifying
+					| priority areas of work.
+			+e.member1
+				+member(getData('chairman.json'))
+			+e.member2
+				+member(getData('director.json'))
+			+e('a').button(href='#{jv0}' tile='our team') Our team
+
+

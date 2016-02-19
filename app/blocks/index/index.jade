@@ -1,8 +1,10 @@
 include ../about/about
 include ../company/company
+include ../management/management
 
 mixin index()
 	+b('main').index&attributes(attributes)
 		+about()
 		+company()
+		+management()
 

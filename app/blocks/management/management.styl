@@ -1,0 +1,116 @@
+.management
+	padding-top em(48)
+	padding-bottom em(66)
+	text-align center
+	clearfix()
+
+	+below(450px)
+		font-size rem(12)
+
+	&__wrapper
+		wrapper()
+
+		+below(450px)
+			padding-x 10px
+
+	&__text
+		margin-left prc(239/1100)
+		width prc(622/1100)
+		max-width em(622)
+		text-align left
+
+		+below(1000px)
+			margin 0 auto
+			width auto
+			max-width em(510)
+
+	&__number
+		position relative
+		margin-bottom em(22, 60)
+		display inline-block
+		font-family $raleway
+		font-size em(60)
+		font-weight 300
+		line-height (60/60)
+		letter-spacing 2.5px
+
+		&::before
+			position absolute
+			top 57%
+			left 50%
+			width em(104, 60)
+			height 1px
+			content ''
+			background-color #000
+			opacity .2
+			transform translateX(-50%)
+
+	&__title
+		margin-bottom em(28, 36)
+		margin-left em(69, 36)
+		font-family $helvetica-cyr
+		font-size em(36)
+		font-weight 300
+		line-height (36/36)
+		letter-spacing em(2, 36)
+		word-spacing em(-2.7, 36)
+
+		& span
+			margin-left em(4.2, 36)
+
+	&__desc
+		margin-bottom em(51, 14)
+		margin-left em(72, 14)
+		padding-right em(100, 14)
+		font-family $helvetica-cyr
+		font-size em(14)
+		font-weight 300
+		line-height (24/14)
+		letter-spacing em(.4, 14)
+
+		+below(1000px)
+			padding-right em(10, 14)
+
+	&__member1
+		margin-left prc(63/1100)
+		max-width prc(700/1100)
+
+		+below(1000px)
+			margin-x auto
+			margin-bottom em(20)
+			width auto
+			max-width em(510)
+
+	&__member2
+		float right
+		max-width prc(641/1100)
+
+		+below(1000px)
+			margin-x auto
+			margin-bottom em(20)
+			float none
+			width auto
+			max-width em(510)
+
+	&__button
+		margin-top em(97, 14)
+		margin-left prc(198/1100)
+		float left
+		clear left
+		font-family $helvetica-cyr
+		font-size em(14)
+		font-weight 500
+		line-height (24/14)
+		text-decoration none
+		text-transform uppercase
+		letter-spacing em(.8, 14)
+		color #000
+
+		+below(1000px)
+			margin-top 0
+			margin-left 0
+			float none
+
+		&:hover
+			padding-bottom em(7, 14)
+			border-bottom 2px solid #000
