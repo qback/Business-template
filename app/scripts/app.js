@@ -26,6 +26,7 @@ $(() => {
 	const $menuTriggerIcon = $('#menuTriggerIcon');
 	const $header = $('#header');
 	const $index = $('#index');
+	const $footer = $('#footer');
 	const $pageBody = $('#page');
 	const $sideNav = $('#nav');
 
@@ -35,6 +36,7 @@ $(() => {
 		$menuTriggerIcon.toggleClass('header__icon_is-clicked');
 		$header.toggleClass('header_is-shifted');
 		$index.toggleClass('index_is-shifted');
+		$footer.toggleClass('footer_is-shifted');
 		$sideNav.toggleClass('nav_open');
 	});
 
@@ -44,6 +46,7 @@ $(() => {
 			$menuTriggerIcon.removeClass('header__icon_is-clicked');
 			$header.removeClass('header_is-shifted');
 			$index.removeClass('index_is-shifted');
+			$footer.removeClass('footer_is-shifted');
 			$sideNav.removeClass('nav_open');
 		}
 	});
