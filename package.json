@@ -57,6 +57,7 @@
     "babel-loader": "^5.4.0",
     "bemto.jade": "^0.2.2",
     "browser-sync": "^2.10.0",
+    "calc-polyfill": "^0.1.0",
     "debuga": "^1.0.2",
     "eslint": "^1.9.0",
     "eslint-loader": "^1.1.1",
