@@ -23,7 +23,8 @@
 			margin-right prc(33/1100)
 
 		+below(1000px)
-			margin 0 auto
+			margin-x auto
+			margin-bottom em(30)
 			display block
 			width auto
 
@@ -33,7 +34,7 @@
 		height auto
 
 	&__text
-		padding-top em(30)
+		margin-top em(30)
 		padding-right prc(96/1100)
 		padding-left prc(19/1100)
 		display inline-block
@@ -43,13 +44,10 @@
 
 		+below(1000px)
 			margin 0 auto
-			padding-right em(50)
+			padding-right 0
 			padding-left 0
 			display block
 			width auto
-
-		+below(700px)
-			padding-right em(10)
 
 	&__number
 		position relative
@@ -92,3 +90,6 @@
 		font-weight 300
 		line-height (24/14)
 		letter-spacing em(.4, 14)
+
+		+below(1000px)
+			padding-right em(10, 14)
