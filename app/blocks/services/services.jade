@@ -3,21 +3,21 @@ mixin services()
 		+e('figure').figure
 			+e('picture').picture
 				source(media='(min-width: 700px)' srcset='assets/images/trial.jpg')
-				+e('img').img(src='assets/images/trial_small.jpg' alt='trial')
+				+e('img').img(src='assets/images/trial_small.jpg' alt='trial' title='photo')
 			+e('figcaption').caption
 				| Trial<br>
 				| practice
 		+e('figure').figure
 			+e('picture').picture
 				source(media='(min-width: 700px)' srcset='assets/images/contract.jpg')
-				+e('img').img(src='assets/images/contract_small.jpg' alt='contract')
+				+e('img').img(src='assets/images/contract_small.jpg' alt='contract' title='photo')
 			+e('figcaption').caption
 				| Contract<br>
 				| law
 		+e('figure').figure_last
 			+e('picture').picture
 				source(media='(min-width: 700px)' srcset='assets/images/corporate.jpg')
-				+e('img').img(src='assets/images/corporate_small.jpg' alt='corporate')
+				+e('img').img(src='assets/images/corporate_small.jpg' alt='corporate' title='photo')
 			+e('figcaption').caption
 				| Corporate<br>
 				| law
