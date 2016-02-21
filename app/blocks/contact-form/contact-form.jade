@@ -3,12 +3,12 @@ mixin contact-form()
 		+e('h4').caption Submit your application
 		+e.row
 			+e('label').label(for='name') name
-			+e('input').input_name(type='text' placeholder='Eugene Ross' required)
+			+e('input').input_name(type='text' placeholder='Eugene Ross' name='name' required)
 		+e.row
 			+e('label').label(for='email') email
-			+e('input').input_email(type='email' placeholder='nameemail@gmail.com' required)
+			+e('input').input_email(type='email' placeholder='nameemail@gmail.com' name='email' required)
 		+e.row_message
 			+e('label').label(for='message') message
-			+e('textarea').message(placeholder='Text message' required)
+			+e('textarea').message(placeholder='Text message' name='message' required)
 		+e.row_submit
 			+e('button').submit Submit Application
