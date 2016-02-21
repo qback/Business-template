@@ -1,7 +1,14 @@
-
+include ../logo/logo
 
 mixin footer()
 	+b('footer').footer&attributes(attributes)
+		+e.wrapper
+			+e.links
+				+e('a').link(href='#{jv0}' title='E-brochure') E-brochure
+				+e('a').link_last(href='#{jv0}' title='Partners') Partners
+			+e('p').copyright COLLOUM #[span prod 15.]
+			+e('span').logo
+				+logo(href='#{jv0}' title='Home')
 
 
 

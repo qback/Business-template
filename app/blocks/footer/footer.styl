@@ -1,0 +1,85 @@
+.footer
+	position relative
+	z-index 3
+	padding-top em(108)
+	padding-bottom em(122)
+	text-align center
+	color #000
+	background-color #fff
+	transition transform .4s
+
+	+below(450px)
+		font-size rem(13)
+		padding-y em(62)
+
+	&_is-shifted
+		transform translateX(em(-200))
+
+	&__wrapper
+		wrapper()
+
+	&__logo
+		margin-top em(5)
+		float left
+
+		+below(1000px)
+			display block
+
+		+below(700px)
+			float none
+
+	&__copyright
+		display inline-block
+		font-family $lombok
+		font-size em(25)
+		font-weight 400
+		line-height (25/25)
+		text-transform uppercase
+		letter-spacing em(1, 25)
+
+		+below(1000px)
+			display block
+			float right
+
+		& span
+			font-family $freestyle
+
+		+below(1000px)
+			margin-bottom em(65, 25)
+			display block
+			float right
+
+		+below(700px)
+			float none
+
+	&__links
+		float right
+
+		+below(1000px)
+			display block
+			float none
+			margin-bottom em(50)
+
+	&__link
+		padding-bottom em(12, 14)
+		display inline-block
+		font-family $helvetica-cyr
+		font-size em(14)
+		font-weight 500
+		line-height (12/14)
+		vertical-align top
+		text-transform uppercase
+		text-decoration none
+		letter-spacing em(.8, 14)
+		color #000
+		border-bottom 2px solid #000
+
+		&:active
+			color #8b8986
+			border-color #8b8986
+
+		&_last
+			margin-left em(20, 14)
+
+
+
