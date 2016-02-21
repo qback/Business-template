@@ -95,6 +95,7 @@
 	&__button
 		margin-top em(97, 14)
 		margin-left prc(198/1100)
+		padding-bottom em(7, 14)
 		float left
 		clear left
 		font-family $helvetica-cyr
@@ -105,12 +106,14 @@
 		text-transform uppercase
 		letter-spacing em(.8, 14)
 		color #000
+		border-bottom 2px solid #000
 
 		+below(1000px)
 			margin-top 0
 			margin-left 0
 			float none
 
-		&:hover
-			padding-bottom em(7, 14)
-			border-bottom 2px solid #000
+		&:active
+			color #8b8986
+			border-color #8b8986
+
