@@ -2,8 +2,26 @@ import svg4everybody from 'svg4everybody';
 import $ from 'jquery';
 import 'calc-polyfill';
 import 'jquery.csssr.validation';
+import GMaps from 'gmaps';
+
 
 $(() => {
+	//гугл-карта с центром на ЭБ
+	let mapObj = new GMaps({
+		el: '#map',
+		lat: 48.857,
+		lng: 2.295
+	});
+	mapObj.addMarker({
+		lat: 48.8583701,
+		lng: 2.2944813,
+		icon: 'assets/images/nav.png'
+	});
+	mapObj.setCenter({
+		lat: 48.8583701,
+		lng: 2.2944813
+	});
+
 	const $menuTrigger = $('#menuTrigger');
 	const $menuTriggerIcon = $('#menuTriggerIcon');
 	const $header = $('#header');

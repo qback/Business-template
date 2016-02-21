@@ -61,6 +61,7 @@
     "debuga": "^1.0.2",
     "eslint": "^1.9.0",
     "eslint-loader": "^1.1.1",
+    "gmaps": "^0.4.22",
     "gulp": "^3.9.0",
     "gulp-bump": "^1.0.0",
     "gulp-cached": "^1.1.0",
