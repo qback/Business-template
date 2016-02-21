@@ -1,0 +1,14 @@
+mixin contact-form()
+	+b('form').contact-form&attributes(attributes)
+		+e('h4').caption Submit your application
+		+e.row
+			+e('label').label(for='name') name
+			+e('input').input_name(type='text' placeholder='Eugene Ross' required)
+		+e.row
+			+e('label').label(for='email') email
+			+e('input').input_email(type='email' placeholder='nameemail@gmail.com' required)
+		+e.row_message
+			+e('label').label(for='message') message
+			+e('textarea').message(placeholder='Text message' required)
+		+e.row_submit
+			+e('button').submit Submit Application

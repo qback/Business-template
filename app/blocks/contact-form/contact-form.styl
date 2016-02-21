@@ -1,0 +1,89 @@
+.contact-form
+	margin-top em(192)
+	font-family $helvetica-cyr
+	color #000
+
+	+below(1000px)
+		margin-top 0
+
+	&__caption
+		margin-bottom em(60, 22)
+		margin-left prc(141/460)
+		font-size em(22)
+		font-weight 300
+		line-height (24/22)
+		letter-spacing em(1.3, 22)
+
+		+below(1000px)
+			margin-x auto
+			margin-bottom em(30, 22)
+			text-align center
+
+	&__row
+		margin-bottom em(31)
+		height em(39)
+		clearfix()
+
+		&_message
+			margin-bottom em(28)
+			height em(89)
+
+		&_submit
+			margin-bottom 0
+			text-align right
+
+			+below(700px)
+				text-align center
+
+	&__label
+		float left
+		width em(76, 14)
+		font-size em(14)
+		font-weight 500
+		line-height (24/14)
+		text-align right
+		vertical-align top
+		letter-spacing em(.6, 14)
+
+	&__input
+	&__message
+		padding 0
+		float right
+		width calc(100% - 8.5em)
+		height 100%
+		font-size em(14)
+		font-weight 300
+		line-height (24/14)
+		vertical-align top
+		letter-spacing em(.3, 14)
+		background none
+		border none
+		border-bottom 1px solid #c9cacb
+
+		&.invalid
+			border-color #f00
+
+	&__input
+		padding-bottom em(15, 14)
+
+	&__message
+		padding-bottom em(20, 14)
+
+	&__submit
+		padding-bottom em(7, 14)
+		display inline-block
+		font-size em(14)
+		font-weight 500
+		line-height (24/14)
+		text-transform uppercase
+		letter-spacing em(.8, 14)
+		cursor pointer
+		background none
+		border none
+		border-bottom 2px solid #000
+
+		&:active
+			color #8b8986
+			border-color #8b8986
+
+
