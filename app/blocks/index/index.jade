@@ -1,10 +1,12 @@
 include ../about/about
 include ../company/company
 include ../management/management
+include ../contacts/contacts
 
 mixin index()
 	+b('main').index&attributes(attributes)
 		+about()
 		+company()
 		+management()
+		+contacts()
 

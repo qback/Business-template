@@ -1,0 +1,23 @@
+include ../contact-form/contact-form
+
+mixin contacts()
+	+b('section').contacts&attributes(attributes)
+		+e.wrapper
+			+e.column_map-container
+				+e.text
+					+e('p').number 05
+					+e('h2').title Our #[span contacts]
+					+e('p').desc
+						| We are always happy to help you and answer all your questions.
+						| We pay attention to each treatment and available
+						| to you around the clock.
+				+e.map#map
+			+e.column_form-container
+				+contact-form(
+					id='contact-form'
+					method='post'
+					action='#'
+					data-validate
+					data-invalid-class="invalid"
+				)
+
